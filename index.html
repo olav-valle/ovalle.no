@@ -2,49 +2,33 @@
 <html lang="no">
 <head>
     <meta charset="UTF-8">
-    <title>Olav M. Valle</title>
+    <link rel="stylesheet" href="main.css">
+
+    <title>Olav Valle</title>
+
 </head>
 
 <body>
+    <div id="terminal">
     <header>
-        <h1>Olav Valle</h1>
+        <h1 id="titlebar">Olav Valle</h1>
     </header>
     <nav>
-        <ul>
-            <li><a href="placeholder.html">Info</a></li>
-            <li><a href="placeholder.html">Blog</a></li>
-            <li><a href="placeholder.html">Butikk</a></li>
-            <li><a href="placeholder.html">Galleri</a></li>
+        <h3>
+            guest@ovalle:~$ ls navigation/
+        </h3>
+        <ul id="lsnav">
+            <li><a href="placeholder.html">Info/</a></li>
+            <li><a href="placeholder.html">Blog/</a></li>
+            <li><a href="placeholder.html">Butikk/</a></li>
+            <li><a href="placeholder.html">Galleri/</a></li>
         </ul>
     </nav>
     <section>
         <h2>Overskrift.</h2>
 
         <article>
-            <h3>Artikkel om meg selv.</h3>
-            <!-- todo: ingress, bilde m/alt, brødtekst, byline.-->
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque convallis tellus elit,
-                luctus auctor elit faucibus et. Aliquam aliquet tellus nec lectus facilisis, vitae volutpat
-                libero facilisis. Nullam dapibus erat eu egestas tristique. Ut fringilla gravida rhoncus.
-                Fusce lacinia arcu congue nisl placerat rhoncus. Morbi cursus dui non nisl tincidunt, eget
-                ultrices mi faucibus. Proin eleifend est vitae mollis ultrices. Nunc fermentum tempor ex
-                pulvinar elementum. In tincidunt tincidunt lacus, at vestibulum neque molestie ut. Pellentesque
-                quis libero ex. Nam tincidunt nisi varius lobortis aliquam. Nam vitae sem odio. Sed mollis
-                vulputate metus et gravida. In in ligula nec felis hendrerit tristique.
-                Sed vitae libero diam. Nunc malesuada dui id enim sagittis, vitae egestas magna pulvinar.
-                Quisque feugiat vulputate enim in dignissim. Nulla facilisi. Duis lobortis magna sem, id laoreet
-                tellus posuere nec. Ut eget suscipit tellus. Vestibulum ante ipsum primis in faucibus orci
-                luctus et ultrices posuere cubilia curae; Nullam euismod velit augue, eu cursus lacus convallis et.
-                Proin dictum dignissim erat, non ullamcorper leo consectetur nec. Phasellus mattis arcu ac
-                tempor vehicula. Vestibulum sed iaculis risus, efficitur condimentum lectus. Aenean iaculis
-                feugiat aliquet. Integer ultrices dui vitae odio elementum venenatis.
-            </p>
-
-        </article>
-
-        <article>
-            <h3>Artikkel om Ålesund.</h3>
+            <h3>guest@ovalle:~$ <strong> cat docs/user.txt</strong></h3>
             <!-- todo: ingress, bilde m/alt, brødtekst, byline.-->
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque convallis tellus elit,
@@ -64,8 +48,30 @@
                 feugiat aliquet. Integer ultrices dui vitae odio elementum venenatis.
             </p>
         </article>
+
         <article>
-            <h3>Artikkel om noe jeg er opptatt av.</h3>
+            <h3>guest@ovalle:~$ cat docs/home.txt</h3>
+            <!-- todo: ingress, bilde m/alt, brødtekst, byline.-->
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque convallis tellus elit,
+                luctus auctor elit faucibus et. Aliquam aliquet tellus nec lectus facilisis, vitae volutpat
+                libero facilisis. Nullam dapibus erat eu egestas tristique. Ut fringilla gravida rhoncus.
+                Fusce lacinia arcu congue nisl placerat rhoncus. Morbi cursus dui non nisl tincidunt, eget
+                ultrices mi faucibus. Proin eleifend est vitae mollis ultrices. Nunc fermentum tempor ex
+                pulvinar elementum. In tincidunt tincidunt lacus, at vestibulum neque molestie ut. Pellentesque
+                quis libero ex. Nam tincidunt nisi varius lobortis aliquam. Nam vitae sem odio. Sed mollis
+                vulputate metus et gravida. In in ligula nec felis hendrerit tristique.
+                Sed vitae libero diam. Nunc malesuada dui id enim sagittis, vitae egestas magna pulvinar.
+                Quisque feugiat vulputate enim in dignissim. Nulla facilisi. Duis lobortis magna sem, id laoreet
+                tellus posuere nec. Ut eget suscipit tellus. Vestibulum ante ipsum primis in faucibus orci
+                luctus et ultrices posuere cubilia curae; Nullam euismod velit augue, eu cursus lacus convallis et.
+                Proin dictum dignissim erat, non ullamcorper leo consectetur nec. Phasellus mattis arcu ac
+                tempor vehicula. Vestibulum sed iaculis risus, efficitur condimentum lectus. Aenean iaculis
+                feugiat aliquet. Integer ultrices dui vitae odio elementum venenatis.
+            </p>
+        </article>
+        <article>
+            <h3>guest@ovalle:~$ cat docs/hobby.txt</h3>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque convallis tellus elit,
                 luctus auctor elit faucibus et. Aliquam aliquet tellus nec lectus facilisis, vitae volutpat
@@ -85,7 +91,7 @@
             </p>
         </article>
 
-        <aside>
+        <aside id="fakta">
             <h2>Fakta:</h2>
                 <dl>
                     <dt>Punkt én.</dt>
@@ -95,7 +101,7 @@
                 </dl>
         </aside>
     </section>
-    <hr>
+
     <footer>
         <address>
             <p>
@@ -108,6 +114,6 @@
         Sist endret <time datetime="2020-01-13">13/01/2021.</time>
         </small>
     </footer>
-
+    </div>
 </body>
 </html>
