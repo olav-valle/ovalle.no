@@ -1,0 +1,164 @@
+/*noinspection CssUnknownTarget*/
+@import 'https://fonts.googleapis.com/css?family=Ubuntu';
+body {
+    /*TODO apply desktop background image?*/
+    background: lightgrey center url("img/background.jpg") ;
+    font-family: "Ubuntu Mono", monospace;
+    /*color: rgba(0, 255, 0, 1); !*green font*!*/
+    color: #E6E6E6;
+/*    body has built-in border/margin???*/
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+/* General element styling*/
+h3 {
+    padding-left: 15px;
+}
+
+/* Link text formatting*/
+a {
+    font-weight: bold;
+    color: #0f9d58;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #4184f2;
+}
+
+a:hover, a:active {
+    color: #BF4040;
+}
+
+/*Terminal is the main box with every other element inside*/
+#terminal {
+    background: #1a1a1a;
+    border: groove 1px black;
+    border-radius: 5px;
+    max-width: 1200px;
+    margin: auto;
+    box-shadow: 15px 15px 15px 1px #00000080;
+}
+
+#terminal aside:hover, article:hover {
+    background: #303030;
+}
+
+@media all and (max-width: 1200px) {
+    #terminal {
+        max-width: 100vw;
+    }
+}
+
+/* The title bar of the terminal "window".*/
+#titlebar {
+    text-align: center;
+    margin: 0;
+    border-top: inset 1px black;
+    border-bottom: groove 1px black;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background: #363636;
+    padding: 5px 5px 5px 10px;
+}
+
+/* Main flex element. Contains all the "terminal panes" groupings; nav, articles (main) and aside (#fakta).*/
+#flex {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Nav is the topmost "terminal pane".*/
+nav {
+    order: 0;
+}
+#lsnav li {
+    display: inline;
+}
+/* Content contains all articles and the aside in a flexbox.*/
+#content {
+    order: 1; /* Order in #flex element*/
+
+    display: flex;
+    flex-direction: row;
+
+}
+
+@media all and (max-width: 1200px) {
+    #content {
+        /*Move facts aside below articles on narrow view*/
+        flex-direction: column;
+    }
+}
+
+/* Main contains only the three article panes*/
+main {
+    order: 3;
+    display: flex;
+    flex-direction: column;
+    flex: 1 75%;
+}
+
+/* General styling for article pane. Article contains headline, byline, ingress and runnig text.*/
+article {
+    padding-bottom: 1em;
+}
+
+/* Class cli is the separator bar at the top of each terminal pane. Reacts on hover of parent terminal pane.*/
+.cli {
+    padding-left: 5px;
+    padding-bottom: 2px;
+    background: #4184f2;
+    color: #000000;
+    border-right: solid 1px black;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+*:hover > .cli {
+    background: #BF4040;
+}
+
+/* The "fake command" that's been typed by the user. E.g. "cat docs/user.txt" */
+.command {
+    margin: 0 0 0 0;
+}
+
+/* Body text of articles*/
+.running {
+    /*color: rgba(0, 255, 0, 1);*/
+    /*color: #E6E6E6;*/
+    padding-left: 2em;
+    margin: 0 0 0 0;
+}
+
+/* The "Fakta" aside. Treated similar to an article terminal pane.*/
+#fakta {
+    order: 4;
+    flex: 1 25%;
+}
+
+#fakta > dl > dt {
+    padding-left: 15px;
+    margin: 0 0 0 0;
+}
+
+#fakta > dl > dd {
+    margin-bottom: 2em;
+}
+
+/* Bottom footer containing copyright and info */
+#statusbar {
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    background: #0f9d58;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin: 0;
+    order: 10;
+}
+
+
