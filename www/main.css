@@ -17,7 +17,7 @@ html {
 body {
 
     display: grid;
-    grid-template: 300px 100vh min-content / 1fr 1200px 1fr;
+    grid-template: 300px 1fr min-content / 1fr 1200px 1fr;
     grid-template-areas:
                         "left   header    right"
                         "left   main      right"
@@ -44,7 +44,6 @@ body {
 #wrapper {
     grid-area: 1/2/3/3;
     background: #eeeff1;
-    min-height: 100vh;
 }
 
 /* --- header element --- */
