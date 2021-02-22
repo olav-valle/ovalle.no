@@ -1,0 +1,19 @@
+/* Blog article  specific CSS stylings*/
+
+
+/*Table Of Contents Aside Styling*/
+#table_of_cont {
+
+}
+#table_of_cont ol {
+    counter-reset: item;
+}
+
+#table_of_cont li {
+    display: block;
+}
+
+#table_of_cont li:before {
+    content: counters(item, ".") " ";
+    counter-increment: item;
+}
