@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Exercise 3</title>
+    <script type="application/javascript" src="jsexec3.js"></script>
+
+    <script>
+        let i = 0;
+
+        function sqrt1764() {
+            console.log(Math.sqrt(1764))
+        }
+
+        function printHello() {
+            console.log("Hello", i++);
+        }
+
+        function aClick() {
+            console.log('You clicked the A button');
+        }
+
+        function bClick() {
+            console.log('You clicked the B button')
+        }
+
+        function textChange() {
+            let s = document.getElementById("field").value;
+            document.getElementById("text").innerText = s;
+            console.log('The Text Changed', s)
+        }
+
+        // uncomment to loop function
+        // setInterval(printHello, 1000)
+    </script>
+</head>
+<body onload="sqrt1764()">
+
+<button id="A" onclick="aClick()">A</button>
+
+<button id="B" onclick="bClick()">B</button>
+
+<input id="field" type="text" onkeyup="textChange()">
+<p id="text"></p>
+</body>
+</html>

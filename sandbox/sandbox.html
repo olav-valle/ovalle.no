@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sandbox</title>
+
+    <style>
+        kbd {
+            background-color: #eee;
+            border-radius: 3px;
+            border: 1px solid #b4b4b4;
+            box-shadow: 0 1px 1px rgba(0, 0, 0, .2), 0 2px 0 0 rgba(255, 255, 255, .7) inset;
+            color: #333;
+            display: inline-block;
+            font-size: 2em;
+            font-weight: 700;
+            line-height: 1;
+            padding: 2px 4px;
+            white-space: nowrap;
+        }
+    </style>
+
+    <script type="application/javascript">
+        a = 2;
+        b = 3;
+        console.log("The sum a + b is", a + b)
+
+        function myfunc() {
+            console.log("-- Log: Document Loaded")
+        }
+
+        window.addEventListener("load", function (){myfunc()})
+
+    </script>
+
+
+    <script type="application/javascript" src="jsexec1.js"></script>
+
+
+</head>
+
+<body>
+<h1>Open devtools console:</h1>
+<p><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>K</kbd></p>
+
+<script type="application/javascript">
+    b=12;
+    console.log("Now (in the body) the sum of a + b is", a + b)
+</script>
+
+<p><a href="exec3.html">Exercise 3</a></p>
+
+
+</body>
+</html>
