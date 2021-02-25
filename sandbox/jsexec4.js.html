@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Exercise 4</title>
+    <script>
+        i = 1;
+
+        function onLoad() {
+            document.getElementById("greeting").innerText = "Hello! This page was loaded " + i++ + " seconds ago.";
+        }
+
+    </script>
+</head>
+<body onload="setInterval(onLoad, 1000)">
+
+<section>
+    <p id="greeting">Loading...</p>
+</section>
+
+<section onchange="calculator()">
+
+    <script>
+        function calculator() {
+
+            document.getElementById("product").innerText =
+                (document
+                        .getElementById("field1")
+                        .value
+                    *
+                    document
+                        .getElementById("field2")
+                        .value)
+                    .toString();
+        }
+    </script>
+
+    <p>
+        <input id="field1" type="text"> * <input id="field2" type="text"> = <span id="product"></span>
+    </p>
+</section>
+</body>
+</html>

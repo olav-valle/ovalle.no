@@ -27,7 +27,7 @@
         function textChange() {
             let s = document.getElementById("field").value;
             document.getElementById("text").innerText = s;
-            console.log('The Text Changed', s)
+            // console.log('The Text Changed', s)
         }
 
         // uncomment to loop function
@@ -36,11 +36,17 @@
 </head>
 <body onload="sqrt1764()">
 
-<button id="A" onclick="aClick()">A</button>
+<p>
+    <button id="A" onclick="aClick()">A</button>
+</p>
 
-<button id="B" onclick="bClick()">B</button>
+<p>
+    <button id="B" onclick="bClick()">B</button>
+</p>
 
-<input id="field" type="text" onkeyup="textChange()">
+<p>When you hit enter (submit) on the field below, the text you wrote will be displayed below it.</p>
+<input id="field" type="text" onchange="textChange()">
 <p id="text"></p>
+
 </body>
 </html>
