@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig authType="OPEN_SSH" host="portal.ovalle.no" id="8afa8d34-1126-47ea-a646-2f392ed5d002" port="12020" nameFormat="DESCRIPTIVE" username="mort" />
+    </configs>
+  </component>
+</project>

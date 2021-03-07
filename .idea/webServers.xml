@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="fd16f596-db69-41b6-be1d-22366af332f7" name="ovalle.no" url="http://ovalle.no">
+        <fileTransfer rootFolder="/home/mort" accessType="SFTP" host="portal.ovalle.no" port="12020" sshConfigId="8afa8d34-1126-47ea-a646-2f392ed5d002" sshConfig="mort@portal.ovalle.no:12020 agent" authAgent="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

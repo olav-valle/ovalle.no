@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        main {
+            display: grid;
+            grid-template: 100px 100px 100px/100px 100px 100px ;
+            margin: auto;
+            justify-content: center;
+            align-content: center;
+        }
+        div {
+            display: flex;
+            border: black solid 1px;
+            min-height: 100%;
+            min-width: 100%;
+            font-size: 80px;
+            justify-self: center;
+            justify-content: center;
+            align-self: center;
+            align-content: center;
+            margin: auto;
+
+        }
+
+    </style>
+
+    <script>
+        function setDivs() {
+            let odd = document.getElementsByClassName("odd");
+            let even = document.getElementsByClassName("even");
+
+            for (let evenElement of even) {
+                evenElement.innerHTML = "O";
+            }
+            for (let oddElement of odd) {
+                oddElement.innerHTML = "X";
+            }
+
+        }
+    </script>
+</head>
+<body onload="setDivs()">
+
+<main>
+    <div class="odd"></div>
+    <div class="even"></div>
+    <div class="odd"></div>
+    <div class="even"></div>
+    <div class="odd"></div>
+    <div class="even"></div>
+    <div class="odd"></div>
+    <div class="even"></div>
+    <div class="odd"></div>
+</main>
+
+</body>
+</html>
